@@ -32,11 +32,6 @@ class UnicodeHangulError(Exception):
     __str__ = __repr__
 
 Null = u''
-try:
-    True
-except:
-    True = 1
-    False = 0
 
 class Jaeum:
 
