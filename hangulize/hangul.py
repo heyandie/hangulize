@@ -83,7 +83,7 @@ Choseong = Jaeum.Choseong
 Jungseong = Moeum.Jungseong
 Jongseong = Jaeum.Jongseong
 
-for name, code in dict(Jaeum.__dict__.items() | Moeum.__dict__.items()):
+for name, code in dict(Jaeum.__dict__.items() | Moeum.__dict__.items()).items():
     if name.isupper() and len(name) <= 3:
         exec ("%s = %s" % (name, repr(code)))
 del name, code
