@@ -90,7 +90,7 @@ Jongseong = Jaeum.Jongseong
 
 for name, code in Jaeum.__dict__.items() + Moeum.__dict__.items():
     if name.isupper() and len(name) <= 3:
-        exec "%s = %s" % (name, repr(code))
+        exec ("%s = %s" % (name, repr(code)))
 del name, code
 
 # Unicode Hangul Syllables Characteristics
